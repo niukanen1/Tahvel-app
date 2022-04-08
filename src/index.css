@@ -1,0 +1,124 @@
+
+* {
+    font-family: sans-serif;
+}
+
+
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.613);
+}
+
+.modal {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttons>button {
+    border: 0;
+    cursor: pointer;
+    padding: 8px 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin: 0 5px;
+}
+
+.buttons>button:nth-child(1) {
+    background-color: rgb(0, 157, 0);
+}
+
+.buttons>button:nth-child(2) {
+    background-color: rgb(191, 24, 24);
+}
+
+.modal>input {
+    user-select: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border: 0px;
+    border-bottom: 2px solid rgb(179, 179, 179);
+    outline: none;
+    box-shadow: none;
+}
+
+.modal>input:focus {
+    border-bottom: 2px solid rgb(21, 27, 225);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn {
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px
+}
+
+.loader {
+    z-index: 1;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid blue;
+    border-bottom: 10px solid blue;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.close-btn { 
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right:10px;
+}
